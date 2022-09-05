@@ -19,7 +19,15 @@ val: images  # val images (relative to 'path') 128 images
 
 # test:  # test images (optional)
 # test: ../../172.16.236.118_0707_RaneDownLoad
-test: ../../172.16.236.119_0707_RaneDownLoad
+# test: ../../172.16.236.119_0707_RaneDownLoad
+
+# test:  ../../../Dataset_test/20220805_warning/除木器300/300/hfobject1/20220801
+# test:  ../../../Dataset_test/20220805_warning/除木器300/300/hfobject1/20220802
+# test:  ../../../Dataset_test/20220805_warning/除木器300/300/hfobject1/20220803
+# test:  ../../../Dataset_test/20220805_warning/除木器300/300/hfobject1/20220804
+
+# 0822 test data
+test:  ../../../Dataset_test/0822_test_301/chumuqi
 
 
 # Classes

@@ -1,5 +1,6 @@
 weights/
 wandb/
+!utils/loggers/wandb/
 *.pyc
 __pycache__/
 runs/

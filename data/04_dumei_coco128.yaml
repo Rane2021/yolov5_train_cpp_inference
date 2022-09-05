@@ -12,8 +12,15 @@
 # 焊接缺陷区域直接检测
 # path: /home/rane/2TDisk/01_Projects/04_huagong_proj/LinkBroken_Dataset/02_detect_area_v1_train/yolo_train  
 # 反应室棒和壁目标检测
+
+# 0825 之前训练的数据
 # path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/ip140_data/train_v2_yolo
-path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Dumei/ip121_2_3/0706_yolo_v3/all_v3_yolo
+# path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Dumei/ip121_2_3/0706_yolo_v3/all_v3_yolo
+
+# 0825 train: 只有煤堆一个类别 + IP120少部分数据
+path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Dumei/0822-ip121_2_3+0/02_0825_ip12_0123_data/all_yolo
+
+
 train: images  # train images (relative to 'path') 128 images
 val: images  # val images (relative to 'path') 128 images
 test:  # test images (optional)
@@ -23,7 +30,8 @@ test:  # test images (optional)
 # names: ['type_0']  # class names
 
 nc: 3  # number of classes
-names: ['type_0', 'type_1', 'type_2']  # class names
+# names: ['type_0', 'type_1', 'type_2']  # class names
+names: ['type_0']  # 0825, 只要煤堆一类
 
 
 # Download script/URL (optional)

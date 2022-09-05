@@ -12,15 +12,11 @@
 # 焊接缺陷区域直接检测
 # path: /home/rane/2TDisk/01_Projects/04_huagong_proj/LinkBroken_Dataset/02_detect_area_v1_train/yolo_train  
 # 反应室棒和壁目标检测
-path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/ip142_data/train_v2_yolo_addip140
+# path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/ip140_data/train_v2_yolo
+path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/ip142_data/train_v4_change_type3/all_train
 train: images  # train images (relative to 'path') 128 images
-val: images    # val images (relative to 'path') 128 images
-# test: test
-# test:  ../val_v1 
-# test:  ../../ip140_data/val_v1    # test images (optional)
-
-test:  ../../../Dataset_test/20220712_testdata_ip18-19-21-22-23-40-42/ip142
-
+val: images  # val images (relative to 'path') 128 images
+test:  # test images (optional)
 
 # Classes
 # nc: 1  # number of classes

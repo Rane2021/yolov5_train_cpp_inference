@@ -8,20 +8,16 @@
 
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
-# path: /home/rane/2TDisk/01_Projects/04_huagong_proj/LinkBroken_Dataset/yolo_v1_train  # dataset root dir  # 焊接缺陷螺丝检测
-# 焊接缺陷区域直接检测
-# path: /home/rane/2TDisk/01_Projects/04_huagong_proj/LinkBroken_Dataset/02_detect_area_v1_train/yolo_train  
-# 反应室棒和壁目标检测
-# path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/ip140_data/train_v2_yolo
-path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Chumuqi/0615_before_datas/train_yolo_v1_yolo
+# 2022-06-11 V1: 除木器两类目标检测
+# path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Chumuqi/0615_before_datas/train_yolo_v1_yolo
+# 2022-08-11 V2: 增加25张人误报图像,处理人存在时误报情况
+path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Chumuqi/0811_deal_people_errors/03_add_0611_labeled_data/train_yolo_v1_yolo
+
 train: images  # train images (relative to 'path') 128 images
 val: images  # val images (relative to 'path') 128 images
 test:  # test images (optional)
 
 # Classes
-# nc: 1  # number of classes
-# names: ['type_0']  # class names
-
 nc: 2  # number of classes
 names: ['type_0', 'type_1']  # class names
 

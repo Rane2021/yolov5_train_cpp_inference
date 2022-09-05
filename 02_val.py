@@ -342,8 +342,18 @@ def run(
 def parse_opt():
     parser = argparse.ArgumentParser()
     # TODO: set params
+    # dumei
     parser.add_argument('--data', type=str, default=ROOT / 'data/04_dumei_coco128_test.yaml', help='dataset.yaml path')
-    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/train/exp_dumei_type0-2_ip12123_v3/weights/best.pt', help='model.pt path(s)')
+    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train_2022-6/exp_dumei_type0-2_ip12123_v3/weights/best.pt', help='model.pt path(s)')
+    
+    # fanyingshi
+    # parser.add_argument('--data', type=str, default=ROOT / 'data/03_fanyingshi_coco128_test.yaml', help='dataset.yaml path')
+    # parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train/exp_fanyingshi_v4_change_type3_ip1402/weights/best.pt', help='model.pt path(s)')
+    
+    # chumuqi
+    # parser.add_argument('--data', type=str, default=ROOT / 'data/05_chumuqi_coco128_test.yaml', help='dataset.yaml path')
+    # parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train/exp_chumuqi_type01_ip118_119/weights/best.pt', help='model.pt path(s)')
+    
     # parser.add_argument('--task', default='val', help='train, val, test, speed or study')
     parser.add_argument('--task', default='test', help='train, val, test, speed or study')
     parser.add_argument('--single-cls', nargs='?', const=True, default=False, help='treat as single-class dataset')

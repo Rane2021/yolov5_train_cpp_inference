@@ -19,7 +19,7 @@ val: images    # val images (relative to 'path') 128 images
 # test:  ../val_v1 
 # test:  ../../ip140_data/val_v1    # test images (optional)
 
-test:  ../../../Dataset_test/20220712_testdata_ip18-19-21-22-23-40-42/ip142
+test:  ../../0722_data/ip134_136/ip134_136
 
 
 # Classes

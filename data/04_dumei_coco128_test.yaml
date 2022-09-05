@@ -23,7 +23,17 @@ val: images  # val images (relative to 'path') 128 images
 
 # test:  ../../../172.16.236.121_0707_RaneDownLoad
 # test:  ../../../172.16.236.122_0707_RaneDownLoad
-test:  ../../../172.16.236.123_0707_RaneDownLoad
+# test:  ../../../172.16.236.123_0707_RaneDownLoad
+
+# test:  ../../../../Dataset_test/20220712_testdata_ip18-19-21-22-23-40-42/ip123
+# test:  ../../../../Dataset_test/IP120_0807_useful_data/0807_useful_data
+
+# 0822 test data
+# test:  ../../../../Dataset_test/0822_test_301/dumei
+# test:  ../../../../Dataset_test/0822_test_301/dumei_20220807
+test:  ../../../../Dataset_test/0822_test_301/dumei_20220808
+
+
 
 # Classes
 # nc: 1  # number of classes

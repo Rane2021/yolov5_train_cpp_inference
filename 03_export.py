@@ -101,7 +101,7 @@ def export_torchscript(model, im, file, optimize, prefix=colorstr('TorchScript:'
         if optimize:  # https://pytorch.org/tutorials/recipes/mobile_interpreter.html
             optimize_for_mobile(ts)._save_for_lite_interpreter(str(f), _extra_files=extra_files)
         else:
-            ts.save(str(f), _extra_files=extra_files)
+            ts.save(str(f), _extra_files=extra_files)  # run this
 
         LOGGER.info(f'{prefix} export success, saved as {f} ({file_size(f):.1f} MB)')
         return f
@@ -566,12 +566,13 @@ def run(
 
 def parse_opt():
     parser = argparse.ArgumentParser()
+    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train_2022-8/exp_0825_dumei_1type/weights/best.pt', help='model.pt path(s)')
+
     parser.add_argument('--data', type=str, default=ROOT / 'data/03_fanyingshi_coco128.yaml', help='dataset.yaml path')
-    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/train/exp_chumuqi_type01_ip118_119/weights/best.pt', help='model.pt path(s)')
     parser.add_argument('--optimize', action='store_true', help='TorchScript: optimize for mobile')
     parser.add_argument('--include',
                         nargs='+',
-                        default=['torchscript', 'onnx', 'openvino'],
+                        default=['torchscript', 'onnx'],
                         help='torchscript, onnx, openvino, engine, coreml, saved_model, pb, tflite, edgetpu, tfjs')
     
     
