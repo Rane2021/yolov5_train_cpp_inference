@@ -33,7 +33,8 @@ endif()
 include_directories(${PROJECT_SOURCE_DIR}/include)
 file(GLOB SOURCE_FILES src/*.cpp)
 
-add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
+# add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
+add_executable(${CMAKE_PROJECT_NAME} src/main.cpp src/detector.cpp)
 target_link_libraries (
         ${CMAKE_PROJECT_NAME}
         ${OpenCV_LIBS}

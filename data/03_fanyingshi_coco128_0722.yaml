@@ -13,7 +13,13 @@
 # path: /home/rane/2TDisk/01_Projects/04_huagong_proj/LinkBroken_Dataset/02_detect_area_v1_train/yolo_train  
 # 反应室棒和壁目标检测
 # path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/ip140_data/train_v2_yolo
-path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/ip142_data/train_v4_change_type3/all_train
+
+# 202208:
+# path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/ip142_data/train_v4_change_type3/all_train
+
+# 20220913: add ip136 138 140 142
+path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/0913_oldAdd_IP136_138_140_142/01_all_IP136_138_140_142
+
 train: images  # train images (relative to 'path') 128 images
 val: images  # val images (relative to 'path') 128 images
 test:  # test images (optional)

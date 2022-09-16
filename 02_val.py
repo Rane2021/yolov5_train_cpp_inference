@@ -343,8 +343,8 @@ def parse_opt():
     parser = argparse.ArgumentParser()
     # TODO: set params
     # dumei
-    parser.add_argument('--data', type=str, default=ROOT / 'data/04_dumei_coco128_test.yaml', help='dataset.yaml path')
-    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train_2022-6/exp_dumei_type0-2_ip12123_v3/weights/best.pt', help='model.pt path(s)')
+    parser.add_argument('--data', type=str, default=ROOT / 'data/03_fanyingshi_coco128_test_0722.yaml', help='dataset.yaml path')
+    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/train/exp_0913_fanyingshi_all_ip136_138_140_142/weights/best.pt', help='model.pt path(s)')
     
     # fanyingshi
     # parser.add_argument('--data', type=str, default=ROOT / 'data/03_fanyingshi_coco128_test.yaml', help='dataset.yaml path')

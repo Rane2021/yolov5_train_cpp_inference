@@ -343,11 +343,13 @@ def parse_opt():
     parser = argparse.ArgumentParser()
     # TODO: set params
     parser.add_argument('--data', type=str, default=ROOT / 'data/03_fanyingshi_coco128_test_0722.yaml', help='dataset.yaml path')
-    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train/exp_fanyingshi_v4_change_type3_ip1402/weights/best.pt', help='model.pt path(s)')
+    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train_2022-6/exp_fanyingshi_v4_change_type3_ip1402/weights/best.pt', help='model.pt path(s)')
     # parser.add_argument('--task', default='val', help='train, val, test, speed or study')
     parser.add_argument('--task', default='test', help='train, val, test, speed or study')
     parser.add_argument('--single-cls', nargs='?', const=True, default=False, help='treat as single-class dataset')
     parser.add_argument('--workers', type=int, default=1, help='max dataloader workers (per RANK in DDP mode)')
+    parser.add_argument('--save-json', type=bool, default=True, help='save a COCO-JSON results file')
+    
     
     parser.add_argument('--batch-size', type=int, default=16, help='batch size')
     parser.add_argument('--imgsz', '--img', '--img-size', type=int, default=640, help='inference size (pixels)')
@@ -359,7 +361,7 @@ def parse_opt():
     parser.add_argument('--save-txt', action='store_true', help='save results to *.txt')  # 保存成训练集合数据格式
     parser.add_argument('--save-hybrid', action='store_true', help='save label+prediction hybrid results to *.txt')
     parser.add_argument('--save-conf', action='store_true', help='save confidences in --save-txt labels')
-    parser.add_argument('--save-json', action='store_true', help='save a COCO-JSON results file')
+    # parser.add_argument('--save-json', action='store_true', help='save a COCO-JSON results file')
     parser.add_argument('--project', default=ROOT / 'runs/val', help='save to project/name')
     parser.add_argument('--name', default='exp', help='save to project/name')
     parser.add_argument('--exist-ok', action='store_true', help='existing project/name ok, do not increment')

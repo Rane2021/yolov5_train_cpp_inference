@@ -478,18 +478,18 @@ def parse_opt(known=False):
     parser = argparse.ArgumentParser()
     
     # TODO: set 3 Param
-    parser.add_argument('--data', type=str, default=ROOT / 'data/04_dumei_coco128.yaml', help='dataset.yaml path')
-    parser.add_argument('--single-cls', nargs='?', const=True, default=True, help='train multi-class data as single-class')
+    parser.add_argument('--data', type=str, default=ROOT / 'data/03_fanyingshi_coco128_0722.yaml', help='dataset.yaml path')
+    parser.add_argument('--single-cls', nargs='?', const=True, default=False, help='train multi-class data as single-class')
     
     parser.add_argument('--weights', type=str, default=ROOT / 'weights/yolov5s.pt', help='initial weights path')
     parser.add_argument('--cfg', type=str, default=ROOT / 'models/yolov5s.yaml', help='model.yaml path')
     parser.add_argument('--batch-size', type=int, default=16, help='total batch size for all GPUs, -1 for autobatch')
     parser.add_argument('--epochs', type=int, default=200)
+    parser.add_argument('--imgsz', '--img', '--img-size', type=int, default=640, help='train, val image size (pixels)')
     
     
     parser.add_argument('--save-period', type=int, default=-1, help='Save checkpoint every x epochs (disabled if < 1)')
     parser.add_argument('--hyp', type=str, default=ROOT / 'data/hyps/hyp.scratch-low.yaml', help='hyperparameters path')
-    parser.add_argument('--imgsz', '--img', '--img-size', type=int, default=640, help='train, val image size (pixels)')
     parser.add_argument('--rect', action='store_true', help='rectangular training')
     parser.add_argument('--resume', nargs='?', const=True, default=False, help='resume most recent training')
     parser.add_argument('--nosave', action='store_true', help='only save final checkpoint')

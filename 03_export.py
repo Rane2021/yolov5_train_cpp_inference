@@ -566,8 +566,9 @@ def run(
 
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train_2022-8/exp_0825_dumei_1type/weights/best.pt', help='model.pt path(s)')
-
+    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train_2022-8/exp_0913_fanyingshi_all_ip136_138_140_142/weights/best.pt', help='model.pt path(s)')
+    parser.add_argument('--imgsz', '--img', '--img-size', nargs='+', type=int, default=[640, 640], help='image (h, w)')
+    
     parser.add_argument('--data', type=str, default=ROOT / 'data/03_fanyingshi_coco128.yaml', help='dataset.yaml path')
     parser.add_argument('--optimize', action='store_true', help='TorchScript: optimize for mobile')
     parser.add_argument('--include',
@@ -576,7 +577,7 @@ def parse_opt():
                         help='torchscript, onnx, openvino, engine, coreml, saved_model, pb, tflite, edgetpu, tfjs')
     
     
-    parser.add_argument('--imgsz', '--img', '--img-size', nargs='+', type=int, default=[640, 640], help='image (h, w)')
+
     parser.add_argument('--batch-size', type=int, default=1, help='batch size')
     parser.add_argument('--device', default='cpu', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
     parser.add_argument('--half', action='store_true', help='FP16 half-precision export')  # 仅支持GPU

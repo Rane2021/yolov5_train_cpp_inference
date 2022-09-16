@@ -19,7 +19,14 @@ val: images    # val images (relative to 'path') 128 images
 # test:  ../val_v1 
 # test:  ../../ip140_data/val_v1    # test images (optional)
 
-test:  ../../0722_data/ip134_136/ip134_136
+# test:  ../../0722_data/ip134_136/ip134_136
+
+# 0909 test 
+# test:  ../../../Dataset_test/0913_ip136_138_140_142_fanyongshi/all_data
+# test:  ../../../Dataset_test/0909_ip136-38-40-42_fanyingshi/IP136
+# test:  ../../../Dataset_test/0909_ip136-38-40-42_fanyingshi/IP138
+# test:  ../../../Dataset_test/0909_ip136-38-40-42_fanyingshi/IP140
+test:  ../../../Dataset_test/0909_ip136-38-40-42_fanyingshi/IP142
 
 
 # Classes
