@@ -1,4 +1,5 @@
 ./libtorch-yolov5 --source image_path --weights torch_model_path  --view-img
+**--view-img: 会保存推理图像，把显示的图像禁用**
 
 
 # 1 

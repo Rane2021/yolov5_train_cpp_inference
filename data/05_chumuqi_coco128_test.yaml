@@ -27,7 +27,10 @@ val: images  # val images (relative to 'path') 128 images
 # test:  ../../../Dataset_test/20220805_warning/除木器300/300/hfobject1/20220804
 
 # 0822 test data
-test:  ../../../Dataset_test/0822_test_301/chumuqi
+# test:  ../../../Dataset_test/0822_test_301/chumuqi
+
+# 2023-3-22 test data
+test:  ../../2023-3-22_all_2ip/ori_test_2ip_data
 
 
 # Classes

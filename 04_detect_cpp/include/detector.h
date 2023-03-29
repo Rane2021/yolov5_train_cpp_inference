@@ -1,8 +1,8 @@
 /*
  * @Author: Rane wang_ran20121
  * @Date: 2022-06-27 22:05:37
- * @LastEditors: Rane wang_ran20121
- * @LastEditTime: 2022-06-27 22:31:41
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-09-18 09:06:34
  * @FilePath: /09_yolov5/04_detect_cpp/include/detector.h
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */

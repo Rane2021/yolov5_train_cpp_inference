@@ -58,9 +58,9 @@ void Demo(cv::Mat& img,
     }
 
     cv::imwrite("./c++_infer.jpg", img);    
-    cv::namedWindow("Result", cv::WINDOW_AUTOSIZE);
-    cv::imshow("Result", img);
-    cv::waitKey(0);
+    // cv::namedWindow("Result", cv::WINDOW_AUTOSIZE);
+    // cv::imshow("Result", img);
+    // cv::waitKey(0);
 }
 
 
@@ -133,6 +133,6 @@ int main(int argc, const char* argv[]) {
         Demo(img, result, class_names);
     }
 
-    cv::destroyAllWindows();
+    // cv::destroyAllWindows();
     return 0;
 }

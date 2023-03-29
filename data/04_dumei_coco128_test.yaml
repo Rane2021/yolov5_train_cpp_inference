@@ -31,16 +31,20 @@ val: images  # val images (relative to 'path') 128 images
 # 0822 test data
 # test:  ../../../../Dataset_test/0822_test_301/dumei
 # test:  ../../../../Dataset_test/0822_test_301/dumei_20220807
-test:  ../../../../Dataset_test/0822_test_301/dumei_20220808
+# test:  ../../../../Dataset_test/0822_test_301/dumei_20220808
+
+# 2023-3-22 test
+test:  ../../../2023-3-22_all_4ip/ori_test_4ip_data
 
 
 
-# Classes
-# nc: 1  # number of classes
-# names: ['type_0']  # class names
 
-nc: 3  # number of classes
-names: ['type_0', 'type_1', 'type_2']  # class names
+# Classes 
+nc: 1  # number of classes
+names: ['type_0']  # class names
+
+# nc: 3  # number of classes
+# names: ['type_0', 'type_1', 'type_2']  # class names
 
 
 # Download script/URL (optional)
