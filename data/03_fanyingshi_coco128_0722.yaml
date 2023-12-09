@@ -18,7 +18,10 @@
 # path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/ip142_data/train_v4_change_type3/all_train
 
 # 20220913: add ip136 138 140 142
-path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/0913_oldAdd_IP136_138_140_142/01_all_IP136_138_140_142
+# path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/0913_oldAdd_IP136_138_140_142/01_all_IP136_138_140_142
+
+# 20231209: train all 12 IP data
+path: /home/rane/1T-SSD/01_Projects/04_huagong_proj/Dataset_fanyingshi/20231208_update/06_add_alltrain-data-VIP
 
 train: images  # train images (relative to 'path') 128 images
 val: images  # val images (relative to 'path') 128 images

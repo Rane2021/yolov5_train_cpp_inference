@@ -342,17 +342,25 @@ def run(
 def parse_opt():
     parser = argparse.ArgumentParser()
     # TODO: set params
-    # dumei
+    # TODO: dumei
     # parser.add_argument('--data', type=str, default=ROOT / 'data/04_dumei_coco128_test.yaml', help='dataset.yaml path')
     # parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train_2023-3/exp_2023-3-24_dumei/weights/best.pt', help='model.pt path(s)')
     
-    # fanyingshi
+    # TODO: fanyingshi
     # parser.add_argument('--data', type=str, default=ROOT / 'data/03_fanyingshi_coco128_test.yaml', help='dataset.yaml path')
     # parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train/exp_fanyingshi_v4_change_type3_ip1402/weights/best.pt', help='model.pt path(s)')
+    # 20231206 test fanyingshi all ip data
+    # parser.add_argument('--data', type=str, default=ROOT / 'data/03_fanyingshi_coco128_test_0722.yaml', help='dataset.yaml path')
+    # parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train_2022-8/exp_0913_fanyingshi_all_ip136_138_140_142/weights/best.pt', help='model.pt path(s)')
+    # 20231209 test fanyingshi all ip data
+    parser.add_argument('--data', type=str, default=ROOT / 'data/03_fanyingshi_coco128_test_0722.yaml', help='dataset.yaml path')
+    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train_2023-12/exp_20231209_fanyingshi_allip-data-train/weights/best.pt', help='model.pt path(s)')
     
-    # chumuqi
-    parser.add_argument('--data', type=str, default=ROOT / 'data/05_chumuqi_coco128_test.yaml', help='dataset.yaml path')
-    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train_2023-3/exp_2023-3-24_chumuqi/weights/best.pt', help='model.pt path(s)')
+
+
+    # TODO: chumuqi
+    # parser.add_argument('--data', type=str, default=ROOT / 'data/05_chumuqi_coco128_test.yaml', help='dataset.yaml path')
+    # parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/vip_train_2023-3/exp_2023-3-24_chumuqi/weights/best.pt', help='model.pt path(s)')
     
     # parser.add_argument('--task', default='val', help='train, val, test, speed or study')
     parser.add_argument('--task', default='test', help='train, val, test, speed or study')

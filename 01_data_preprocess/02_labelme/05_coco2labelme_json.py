@@ -18,7 +18,7 @@ from utils.labelme_json import labelme_json
 
 if __name__ == '__main__':
     # set param
-    json_path = 'runs/val/exp_0909_pred_IP136/best_predictions.json'
+    json_path = 'runs/val/exp_231206_fanyingshi_screen_v1/best_predictions.json'
     img_type = ".jpg"
 
 

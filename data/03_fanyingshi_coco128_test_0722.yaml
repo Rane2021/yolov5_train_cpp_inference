@@ -12,7 +12,9 @@
 # 焊接缺陷区域直接检测
 # path: /home/rane/2TDisk/01_Projects/04_huagong_proj/LinkBroken_Dataset/02_detect_area_v1_train/yolo_train  
 # 反应室棒和壁目标检测
-path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/ip142_data/train_v2_yolo_addip140
+# path: /home/rane/2TDisk/01_Projects/04_huagong_proj/Dataset_Fanyingshi/ip142_data/train_v2_yolo_addip140
+# 20231206 更新
+path: /home/rane/1T-SSD/01_Projects/04_huagong_proj/Dataset_fanyingshi/20220913_update_all_data
 train: images  # train images (relative to 'path') 128 images
 val: images    # val images (relative to 'path') 128 images
 # test: test
@@ -26,7 +28,22 @@ val: images    # val images (relative to 'path') 128 images
 # test:  ../../../Dataset_test/0909_ip136-38-40-42_fanyingshi/IP136
 # test:  ../../../Dataset_test/0909_ip136-38-40-42_fanyingshi/IP138
 # test:  ../../../Dataset_test/0909_ip136-38-40-42_fanyingshi/IP140
-test:  ../../../Dataset_test/0909_ip136-38-40-42_fanyingshi/IP142
+# test:  ../../../Dataset_test/0909_ip136-38-40-42_fanyingshi/IP142
+
+# 20231206 test
+# test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/128
+# test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/130
+# test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/132
+# test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/134
+# test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/136
+# test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/138
+# test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/140
+# test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/142
+# test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/144
+# test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/146
+# test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/148
+test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/150
+# test:  /media/rane/RanePan/其它项目/2022-华峰化工/20231205-反应室更新/01_挑选数据_combine
 
 
 # Classes
